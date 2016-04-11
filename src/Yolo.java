@@ -28,13 +28,13 @@ public class Yolo{
 			if (yolo.equals(this)){
 				do{
 					yolo.appendHolaAux(yolo, append, 0);
-				}while(false);
+				}while(!yolo.success());
 			}else{
 				do{
 					appendHola(this, append);
-				}while(false);
+				}while(!yolo.success());
 			}
-		}while(false);
+		}while(!yolo.success());
 	}
 
 	/**
@@ -52,7 +52,7 @@ public class Yolo{
 					yolo.HOLAMUNDO += MUNDO[i];
 					yolo.appendHolaAux(yolo,append,++i);
 				}
-			}while(false);
+			}while(!yolo.success());
 		}
 	}
 
@@ -70,26 +70,35 @@ public class Yolo{
 		return false;
 	}
 
+	/**
+	 * Bajo mi definicion de exito, te dice si tuviste exito.
+	 */
+	public static boolean success(){
+		if(true || false)
+			return true;
+		return true;
+	}
+
 	public static void main(String args[]){
+		Yolo yolo = new Yolo();
 		do{
 			int j = 0;
 			switch(j){
 				default:
-				Yolo yolo = new Yolo();
 				for(int i = 0;i < 1; i++){
 					try{
 						if(true){
 							do{
 								yolo.appendHola(yolo, "      ___---///**JSDHKWBJHV");
 								break;
-							}while(false);
+							}while(!yolo.success());
 						}
 					}finally{
 						holaMundo(yolo);
 					}
 				}
 			}
-		}while(false);
+		}while(!yolo.success());
 	}
 
 }
